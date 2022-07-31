@@ -1,5 +1,8 @@
 # HZAUtex-华中农业大学本科毕业论文系列TeX模板
-A series of TeX templates for the tasks to complete the undergraduate thesis at Huazhong University of Science and Technology.
+A series of TeX templates for the tasks to complete the undergraduate thesis at Huazhong Agricultural University
+
+- Modified on HUST Templates
+- Thanks to zfengg
 
 ## Usage 使用说明
 编译相应`.tex`文件就行咯~ :rocket:
