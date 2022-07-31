@@ -1,4 +1,4 @@
-# HUSTtex-华中科技大学本科毕业论文系列TeX模板
+# HZAUtex-华中农业大学本科毕业论文系列TeX模板
 A series of TeX templates for the tasks to complete the undergraduate thesis at Huazhong University of Science and Technology.
 
 ## Usage 使用说明
@@ -25,6 +25,8 @@ The `TeX` editor [TeXstudio](https://www.texstudio.org/) is recommended and be s
 If the fonts are not installed in you system, then you may find the fonts (`.ttf`) in the directory [`fonts/`](fonts/). There are several scripts to install fonts quickly:
 - Windows: run the Powerscript [`InstallFonts.ps1`](InstallFonts.ps1). (Note the [excution policy](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.1).)
 - Linux & MacOS: run bash script [`install_fonts.sh`](install_fonts.sh).
+- 如果仍然遇到字体错误，请在命令行中运行
+sudo tlmgr install collection-fontsrecommended collection-fontsextra
 ---
 I hope this repository can help you finish your job more effectively and elegantly. Please feel free to open an issue if you have any question or suggestion.
 

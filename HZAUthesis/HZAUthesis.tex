@@ -1,6 +1,6 @@
-% HUSTthesis.tex @ https://github.com/zfengg/HUSTtex/tree/master/HUSTthesis
+% HZAUthesis.tex @ https://github.com/zfengg/HZAUtex/tree/master/HZAUthesis
 %
-% 	A simple tex template for the undergraduate thesis at HUST.
+% 	A simple tex template for the undergraduate thesis at HZAU.
 %
 % author: Zhou Feng @ 2019
 %
@@ -48,7 +48,7 @@
 \setCJKmainfont{SimSun} 	% set the mainfont of Chinese as songti. (serif) for
 \setCJKsansfont{SimSun} 	% sans serif font for \textsf
 \setCJKmonofont{SimSun} 	% monospace font for \texttt
-% \punctstyle{kaiming}  	% Remove the space used by symbols like comma. Special for the mainland students like us HUSTers.
+% \punctstyle{kaiming}  	% Remove the space used by symbols like comma. Special for the mainland students like us HZAUers.
 \setCJKfamilyfont{song}{SimSun}                       % 宋体 song
 \newcommand{\song}{\CJKfamily{song}}
 \setCJKfamilyfont{kai}{KaiTi}                         % 楷体  kai
@@ -59,7 +59,7 @@
 \newcommand{\hei}{\CJKfamily{hei}}
 % English font
 \usepackage{fontspec}% Then you can use the fonts installed at your device.
-\setmainfont{Times New Roman}
+\setmainfont{SimSun}
 \setsansfont{Times New Roman}
 \setmonofont{Times New Roman}
 %\setsansfont{[foo.ttf]} % for the fonts at this default path.
@@ -86,7 +86,7 @@
 \usepackage{fancyhdr} % for header and footer
 % 设置页眉样式
 \newcommand{\headstyle}{
- \fancyhead[C]{ \hwzs\wuhao 华\hspace{0.5em}中\hspace{0.5em}科\hspace{0.5em}技\hspace{0.5em}大\hspace{0.5em}学\hspace{0.5em}毕\hspace{0.5em}业\hspace{0.5em}设\hspace{0.5em}计\hspace{0.5em}(论\hspace{0.5em}文)}
+ \fancyhead[C]{ \hwzs\wuhao 华\hspace{0.5em}中\hspace{0.5em}农\hspace{0.5em}业\hspace{0.5em}大\hspace{0.5em}学\hspace{0.5em}2020\hspace{0.5em}届\hspace{0.5em}学\hspace{0.5em}士\hspace{0.5em}学\hspace{0.5em}位\hspace{0.5em}(毕\hspace{0.5em}业)\hspace{0.5em}论\hspace{0.5em}文}
 }
 % 设置页脚样式
 \newcommand{\footstyle}{\fancyfoot[C]{\wuhao\thepage}
@@ -211,7 +211,7 @@
 \usepackage{natbib}
 \renewcommand{\refname}{\centering\hei\xiaoerhao 参考文献}
 \bibsep=0pt % 用来设置每个\bibitem之间的间距
-% \renewcommand{\bibname}{HUSTthesis} % .bib name
+% \renewcommand{\bibname}{HZAUthesis} % .bib name
 % \newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}} % show citation label in the upperscript
 
 % ---------------------------------------------------------------------------- %
@@ -220,17 +220,17 @@
 \usepackage{amssymb}
 \usepackage{wasysym}
 % 制作tatement中的符号
-\def\HUSTcheckedbox{$\Square\!\!\!\!\checkmark$}
-\def\HUSTbox{$\Square$}
+\def\HZAUcheckedbox{$\Square\!\!\!\!\checkmark$}
+\def\HZAUbox{$\Square$}
 % 设置命令
 \newcommand{\statement}[2]{
 	\def\yearofconfidentiality{\hspace{2em}}
 
-    \def\HUSTconfidential{\HUSTbox}
-	\def\HUSTnotconfidential{\HUSTcheckedbox}
+    \def\HZAUconfidential{\HZAUbox}
+	\def\HZAUnotconfidential{\HZAUcheckedbox}
 	\ifnum #1<2
-		\def\HUSTconfidential{\HUSTcheckedbox}
-		\def\HUSTnotconfidential{\HUSTbox}
+		\def\HZAUconfidential{\HZAUcheckedbox}
+		\def\HZAUnotconfidential{\HZAUbox}
 		\def\yearofconfidentiality{#2}
 	\fi
 	\clearpage
@@ -258,9 +258,9 @@
 
     本学位论文作者完全了解学校有关保障、使用学位论文的规定，同意学校保留并向有关学位论文管理部门或机构送交论文的复印件和电子版，允许论文被查阅和借阅。本人授权省级优秀学士论文评选机构将本学位论文的全部或部分内容编入有关数据进行检索，可以采用影印、缩印或扫描等复制手段保存和汇编本学位论文。
 
-    本学位论文属于 1、保密 \HUSTconfidential ，在 \yearofconfidentiality 年解密后适用本授权书。
+    本学位论文属于 1、保密 \HZAUconfidential ，在 \yearofconfidentiality 年解密后适用本授权书。
 
-		    \hspace{7em} 2、不保密 \HUSTnotconfidential \hspace{1em}
+		    \hspace{7em} 2、不保密 \HZAUnotconfidential \hspace{1em}
 			。
 
 			\hspace{7em} (请在以上相应方框内打``$\checkmark$'')
@@ -352,33 +352,33 @@
 \usepackage{titling}
 % 重置命令 maketitle
 \renewcommand{\maketitle}{
-	\def\HUSTtitlelength{12em}
+	\def\HZAUtitlelength{12em}
  	\begin{titlepage}
 		\begin{center}
 			\vspace*{0em}
-			\includegraphics[height=1.61cm]{HUSTlogo.eps}\\
+			\includegraphics[height=3.5cm]{HZAU_LOGO.png}\\
 %
-			\vspace*{4em}
+			\vspace*{5em}
 %
 			{\xiaochuhao \hwzs \bfseries 本科生毕业设计[论文]}\\
 %
-			\vspace*{6em}
+			\vspace*{4em}
 			{\erhao \hei \bfseries \thetitle}
 
-			\vspace*{6em}
+			\vspace*{4em}
 			{\sanhao \hwzs
 				\renewcommand\arraystretch{2.7}
 				\begin{tabular}{lc}
 					\makebox[4em][s]{院 \hfill 系} &
-					\underline{\makebox[\HUSTtitlelength]{\school}} \\
+					\underline{\makebox[\HZAUtitlelength]{\school}} \\
 					\makebox[4em][s]{专业班级} &
-					\underline{\makebox[\HUSTtitlelength]{\classnum}} \\
+					\underline{\makebox[\HZAUtitlelength]{\classnum}} \\
 					\makebox[4em][s]{姓 \hfill 名} &
-					\underline{\makebox[\HUSTtitlelength]{\theauthor}} \\
+					\underline{\makebox[\HZAUtitlelength]{\theauthor}} \\
 					\makebox[4em][s]{学 \hfill 号} &
-					\underline{\makebox[\HUSTtitlelength]{\stunum}} \\
+					\underline{\makebox[\HZAUtitlelength]{\stunum}} \\
 					\makebox[4em][s]{指导教师} &
-					\underline{\makebox[\HUSTtitlelength]{\instructor}} \\
+					\underline{\makebox[\HZAUtitlelength]{\instructor}} \\
 			  \end{tabular}
 		    }
 
@@ -391,10 +391,10 @@
 
 % ------------------------------------ 标题页 ----------------------------------- %
 \title{毕业论文题目} % 论文题目
-\def\school{数学与统计学院} % 院系
-\def\classnum{应数拔尖1501班} % 专业班级
+\def\school{生命科学技术学院} % 院系
+\def\classnum{生命科学1901班} % 专业班级
 \author{学生姓名} % 姓名
-\def\stunum{U201512345}	% 学号
+\def\stunum{2019305190201}	% 学号
 \def\instructor{导师姓名} % 指导老师
 \date{\today} % 日期
 
@@ -444,46 +444,39 @@
 
 % ----------------------------------- 主体内容 ----------------------------------- %
 \seccontent
-\section{绪论}
-\hspace{12em}\hongzifuzhu{黑体小二加粗居中}
+\section{前言}
+%\hspace{12em}\hongzifuzhu{黑体小二加粗居中}
 
-\subsection{$\times\times\times\times\times\times $}
-\hongzifuzhu{黑体4号加粗，字母、阿拉伯数字为Times New Roman 4号加粗}
-
-\subsection{$ \times\times\times\times\times\times $}
-\hongzifuzhu{黑体4号加粗，字母、阿拉伯数字为Times New Roman 4号加粗}
-
-$ \times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times $
-
-\hongzifuzhu{宋体小4号, 行间距固定1.5倍行距，字符间距为标准}
-
-\hspace{15em} \ldots\ldots\ldots
-
-\hspace{15em} \ldots\ldots\ldots
-
-\hspace{15em} \ldots\ldots\ldots
-
-\subsubsection{$\times\times\times\times\times\times $}
-\hongzifuzhu{黑体小4号加粗，字母、阿拉伯数字为Times New Roman 4号加粗}
+\subsection{前言组成}
+前言应包括：研究问题的由来、文献综述、研究目的等基本内容。
 
 
-\subsubsection{$\times\times\times\times\times\times $}
-\hongzifuzhu{黑体小4号加粗，字母、阿拉伯数字为Times New Roman 4号加粗}
+\subsection{问题由来与文献综述}
 
-\paragraph{$ \times\times\times\times\times\times $}
-\hongzifuzhu{黑体小4号加粗，字母、阿拉伯数字为Times New Roman 4号加粗}
 
+\subsubsection{问题由来}
+研究问题的由来应明确地提出论文研究所针对的科学、生产和经济建设的问题，指出研究这些问题的意义。
+
+
+\subsubsection{文献综述}
+文献综述主要回顾与所研究课题相关的学科背景，相关领域的研究进展和存在的问题等，是作者对相关文献阅读、消化后的综合、提炼与升华，反映作者对国内外相关进展的了解和理解的程度。因此，文献综述在叙述前人工作的同时，应有自己的看法和观点。不应将文献综述写成前人工作的堆砌，也不应象教科书一样写成知识性介绍。
+
+
+\subsection{注意事项}
+注意：过去已多次发现在学位论文的“文献综述”和科研论文的“前言”部分整段和部分照抄前人文章的现象，这种现象叫“抄袭”，在文献综述中尤其容易出现，写作时应注意避免。否则被发现后可能会导致不授予学位。
+研究目的是在提出问题和综述文献的基础上，阐述学术思想，提出科学假设和假说，提出论文研究要实现的目标或达到的目的。
 
 \sectionbreak
 
 % ---------------------------------------------------------------------------- %
-\section{一级标题}
-\hspace{12em}\hongzifuzhu{黑体小二加粗居中}
+\section{材料和方法题}
+%\hspace{12em}\hongzifuzhu{黑体小二加粗居中}
 
-\subsection{二级标题}
-\hongzifuzhu{黑体4号加粗，字母、阿拉伯数字为Times New Roman 4号加粗}
+\subsection{说明}
+%\hongzifuzhu{黑体4号加粗，字母、阿拉伯数字为Times New Roman 4号加粗}
 
-$ \times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times $
+研究所用的材料应详尽地列出，如生物材料及拉丁文学名、品种名称、菌株名称，实验材料与课题研究有关的各种特征特性，由实验材料所得到的各种衍生材料、实验群体、世代、数量等，清楚地说明各种材料的来源。
+实验方法的描述也应详尽，以能将实验材料与实验结果贯通为准。描述的详尽程度应能使必要时，他人能重复出这一实验。对一些常用的实验方法，可在引用他人文献的基础上，简要加以描述，不必花大量篇幅去交待细节。但对于方法的改进和自己发明的新方法则需要作详细的交待。要注意说明所用的是他人的方法，还是自己发明的方法，还是在前人方法基础上有改进，有什么改进等。实验方法还应包括实验设计、田间种植方式、田间管理、试验时间、地点、数据采集（考种）、统计分析方法、所用统计软件、计算机程序等。
 
 \hongzifuzhu{宋体小4号, 行间距固定1.5倍行距，字符间距为标准}
 
@@ -503,12 +496,13 @@ $ \times\times\times\times\times\times\times\times\times\times\times\times\times
 \sectionbreak
 
 % ---------------------------------------------------------------------------- %
-\section{方程及图表}
+\section{结果与分析}
 
 \hspace{12em}\hongzifuzhu{黑体小二加粗居中}
 
-\subsection{$\times\times\times\times\times\times $}
-\hongzifuzhu{黑体4号加粗，字母、阿拉伯数字为Times New Roman 4号加粗}
+\subsection{说明}
+%\hongzifuzhu{黑体4号加粗，字母、阿拉伯数字为Times New Roman 4号加粗}
+详尽陈述课题研究结果，在写作时力求条理清晰，层次分明，做到环环相扣，具有严密的逻辑性。避免重复叙述实验方法，也不要作过多的讨论。
 
 $ \times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times\times $，其 $ \times\times\times\times\times$ 可表示如下：
 \begin{equation}
@@ -556,7 +550,10 @@ $ \times\times\times\times\times\times\times\times\times\times\times\times\times
 \textcolor{red}{(图标题：位于图下方，黑体小4号，字母、阿拉伯数字为Time New Roman 小4号)}
 
 
-\section{列举环境}
+\section{讨论}
+\subsection{说明}
+讨论一节在很大程度上反映作者综合分析与逻辑思维的水平与能力。讨论的基础是结果与分析，应在对结果透彻理解的基础上归纳研究的主要结果，从中得出的主要结论，阐述与前人的研究结果相比有什么进步，解决了什么科学问题，研究结果在理论上和应用上的价值、前景等。同时还应讨论存在的问题、研究工作不足方面，进一步将如何研究等。讨论应注意与前面提出的研究目的相呼应，要言之有据，避免重复叙述实验结果。作为学位论文，鼓励活跃学术思想，提出新的学术观点，以一定的实验证据为基础大胆推论、假设。
+
 \begin{description}
 	\item[列表]
 	\item[枚举] \begin{enumerate}
@@ -578,7 +575,9 @@ $ \times\times\times\times\times\times\times\times\times\times\times\times\times
 \section{使用说明}\seccontent
 \begin{description}
 	\seccontent
-	\item[基本信息] 作者：冯洲 \href{https://github.com/zfengg}{@zfengg}. 版本信息：2019/1/23, v1.0发布在 \href{https://github.com/zfengg/HUSTtex}{HUSTtex} 仓库。 如果有任何建议及纠正，欢迎 \href{https://github.com/zfengg/HUSTtex/issues}{Issue} 或者 \href{https://github.com/zfengg/HUSTtex/pulls}{Pull request}！
+	\item[基本信息] 作者：冯洲 \href{https://github.com/zfengg}{@zfengg}. 版本信息：2019/1/23, v1.0发布在 \href{https://github.com/zfengg/HZAUtex}{HZAUtex} 仓库。 如果有任何建议及纠正，欢迎 \href{https://github.com/zfengg/HZAUtex/issues}{Issue} 或者 \href{https://github.com/zfengg/HZAUtex/pulls}{Pull request}！华中农业大学模版由@Jerry Wang修改，在此感谢原作者的付出。
+	
+	\item[格式信息] 具体的格式信息请参见本科生院发布的\href{http://bksy.hzau.edu.cn/info/1050/5368.htm}{华中农业大学学位（毕业）论文撰写规范 （自然科学类）}
 	
 	\item[必备条件]  安装最新版本的 \href{http://www.tug.org/texlive/}{TeXLive}（推荐）或 \href{http://miktex.org/}{MiKTeX}。请确保所有宏包都更新至最新。因为中文支持利用的是包\textbf{XeCJK}，所以编译器请使用 Xe\LaTeX。 编辑器推荐 \href{http://texstudio.sourceforge.net/}{TeXstudio}。 
 	此文件在 Windows, Linux, MacOS 编译通过。
@@ -593,7 +592,7 @@ $ \times\times\times\times\times\times\times\times\times\times\times\times\times
 	
 	\item[距离控制] 这个tex文件的距离控制可能不太精细，如果有具体的标准数值请联系，作者来完善！
 	
-	\item[页眉页脚] 页眉页脚的样式已经调好，距页边缘的应该也没错。如果知道精确的距离请\href{https://github.com/zfengg/HUSTtex/issues}{Issue}，我马上调整，谢谢！
+	\item[页眉页脚] 页眉页脚的样式已经调好，距页边缘的应该也没错。如果知道精确的距离请\href{https://github.com/zfengg/HZAUtex/issues}{Issue}，我马上调整，谢谢！
 	\item[超链接及书签] 利用hyperref包，每个link, cite, url已调整成超链接，点击即可到达相应位置。PDF书签及链接的样式请在头文件处根据自己的喜好修改。
 	
 	\item[参考文献] 其实论文翻译这块给的模板并没有要求参考文献，可自行删除，但是这里提供了两种参考文献的样式：第一种使用\href{http://www.bibtex.org/}{BiB\TeX}\ 引用 \verb|.bib| 文件。第二种直接利用环境 \verb*|\thebibliography|。Tip：可以把使用BiB\TeX 生成的 \verb*|.bbl| 文件内容粘到 \verb*|.tex| 文件中以达到文件的独立性。
@@ -608,29 +607,26 @@ $ \times\times\times\times\times\times\times\times\times\times\times\times\times
 \blindtext[4]
 
 
-% ------------------------------------ 致谢 ------------------------------------ %
-\begin{thankpage}
-
-\end{thankpage}
-
 % ----------------------------------- 参考文献 ----------------------------------- %
 \clearpage
 \phantomsection
 \addcontentsline{toc}{section}{参考文献}
 
 \bibliographystyle{plain}
-\bibliography{HUSTthesis}\label{bibtexref}
-\hongzifuzhu{第一个参考文献为使用 Bib\TeX 基于 $ \mathtt{HUSTthesis.bib} $ 生成。 如果不使用 Bib\TeX 可删除，然后只用后一个参考文献。}
-
+\bibliography{HZAUthesis}\label{bibtexref}
 
 \begin{thebibliography}{3}
 	\label{latexref}
 	\seccontent
 	\bibitem{rudin} 王静康,张凤宝,夏淑倩等.论化工本科专业国际认证与国内认证的“实质性”.高等工程教育研究,2014,5:1-4
-
+	
 	\bibitem{stone} Stone J A, Howard L P. A simple technique for observing periodic nonlinearities in Michelson interferometers. Precision Engineering,1998,22(4):220-232
-
+	
 \end{thebibliography}
+
+\hongzifuzhu{第一个参考文献为使用 Bib\TeX 基于 $ \mathtt{HZAUthesis.bib} $ 生成。 如果不使用 Bib\TeX 可删除，然后只用后一个参考文献。}
+
+
 
 % ------------------------------------ 附录 ------------------------------------ %
 \clearpage
@@ -639,5 +635,11 @@ $ \times\times\times\times\times\times\times\times\times\times\times\times\times
 \addcontentsline{toc}{section}{附录}
 \section*{附录}
 
+附录出现在“参考文献”的后面。可以包括两部分的内容：（1）论文的补充材料，如实验方法、试剂配方、实验数据、公式推导等；（2）作者简历、在读期间与课题有关的研究成果，包括发表的论文、出版专著、参加国际会议及论文等。
+
+% ------------------------------------ 致谢 ------------------------------------ %
+\begin{thankpage}
+	致谢是发自内心的对论文的完成起到指导和帮助作用的人和单位的感谢，不赞成在此对导师或其他个人进行赞扬或吹捧。无关的人或单位不要罗列上去。致谢出现在论文的最后。
+\end{thankpage}
 
 \end{document}
