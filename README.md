@@ -1,7 +1,7 @@
 # HZAUtex-华中农业大学本科毕业论文系列TeX模板
 A series of TeX templates for the tasks to complete the undergraduate thesis at Huazhong Agricultural University
 
-- Modified on HUST Templates
+- Modified on HZAU Templates
 - Thanks to zfengg
 
 ## Usage 使用说明
@@ -13,10 +13,10 @@ A series of TeX templates for the tasks to complete the undergraduate thesis at 
 The `TeX` editor [TeXstudio](https://www.texstudio.org/) is recommended and be sure to set the compiler as **XeLaTeX**.
 
 ## `.tex` 模板 `.tex` files
-- 开题报告(thesis proposal): [`HUSTproposal.tex`](HUSTproposal\HUSTproposal.tex)
-- 开题答辩(thesis opening report): [`HUSTopening.tex`](HUSTopening\HUSTopening.tex)
-- 外文翻译(foreign literature translation): [`HUSTtrans.tex`](HUSTtrans/HUSTtrans.tex)
-- 论文(thesis): [`HUSTthesis.tex`](HUSTthesis/HUSTthesis.tex)
+- 开题报告(thesis proposal): [`HZAUproposal.tex`](HZAUproposal\HZAUproposal.tex)
+- 开题答辩(thesis opening report): [`HZAUopening.tex`](HZAUopening\HZAUopening.tex)
+- 外文翻译(foreign literature translation): [`HZAUtrans.tex`](HZAUtrans/HZAUtrans.tex)
+- 论文(thesis): [`HZAUthesis.tex`](HZAUthesis/HZAUthesis.tex)
 
 以上所有`.tex`文件下载即可在**XeLaTeX**编译通过（只需原生[`TeXLive`](https://www.tug.org/texlive/), [`MacTeX`](https://www.tug.org/mactex/), [`MiKTeX`](https://miktex.org/)等主流TeX环境）。
 
