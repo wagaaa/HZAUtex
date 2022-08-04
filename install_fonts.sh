@@ -39,5 +39,11 @@ else
 fi
 
 echo 'Fonts installation finished~~~'
-echo 'Refeshing font cache:'
-fc-cache -f -v
+
+if [[ `uname` == 'Darwin' ]]; then
+	echo 'Done'
+else
+	echo 'Refeshing font cache:'
+	fc-cache -f -v
+	echo 'Done'
+fi
